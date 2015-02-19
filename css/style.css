@@ -1,0 +1,636 @@
+/* ==================
+Tier 27
+Copyright 2014
+written for - www.tier27.com
+
+swatch colors
+=====================
+yellow - #b58900
+orange - #cb4b16
+red - #dc322f
+magenta - #d33682
+violet - #6c71c4
+blue - #3686be
+cyan - #2aa198
+green - #93CC76
+dark gray - #2E3335
+===================== */
+
+@font-face {
+    font-family: "Proxima900";
+    src: url("../fonts/proximanova-extrabold.woff") format('woff');
+}
+@font-face {
+    font-family: "Proxima700";
+    src: url("../fonts/proximanova-bold.woff") format('woff');
+}
+@font-face {
+    font-family: "Proxima600";
+    src: url("../fonts/proximanova-semibold.woff") format('woff');
+}
+@font-face {
+    font-family: "Proxima400";
+    src: url("../fonts/proximanova-regular.woff") format('woff');
+}
+@font-face {
+    font-family: "Proxima300";
+    src: url("../fonts/proximanova-thin.otf") format('opentype');
+}
+
+/* ==========================================================================
+Global Styling
+========================================================================== */
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+.homepage-section {
+    padding: 90px 0 90px 0;
+}
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+.standard-button {
+    padding: 15px 45px;
+    text-transform: uppercase;
+    background-color: #3686be;
+    color: white;
+    letter-spacing: 1.5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+}
+.standard-button:hover {
+    color: white;
+    background: #fff;
+    border: 2px solid #3686be;
+    text-decoration: none;
+}
+/* ==========================================================================
+Buttons
+========================================================================== */
+.use-btn {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #3686be;
+    font-size: 16px;
+}
+
+.theme-color-btn {
+    background: #3686be;
+    border: 1px solid #3686be;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+
+.theme-color-btn:hover, .theme-color-btn:focus {
+    border: 1px solid #3686be;
+    color: #3686be;
+    background: none;
+    text-decoration: none;
+}
+
+
+
+.dark-btn {
+    border: 1px solid #242830;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.dark-btn:hover, .dark-btn:focus {
+    border: 1px solid #242830;
+    color: #242830;
+    background: none;
+}
+
+.use-btn:hover, .use-btn:focus, .dark-btn {
+    background-color: #242830;
+    color: #fff;
+    text-decoration: none;
+}
+.learn-btn, .download-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+    border-color: #068bb1;
+    color: #068bb1;
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i, .download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 0px
+}
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 10px 35px 16px 0px;
+    cursor: pointer;
+}
+.nav-toggle:focus {
+    outline: none;
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    cursor: pointer;
+}
+.nav-toggle span:before {
+    top: -10px
+}
+.nav-toggle span:after {
+    bottom: -10px
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+.navicon {
+    position: relative;
+    height: 26px;
+    margin-top: 12px;
+    font-family: 'Proxima300', arial;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
+}
+.logo a {
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 1px 0 #255c82;
+}
+/*.logo a span {
+    font-family: 'Roboto Slab', serif;
+}*/
+.logo a:hover {
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+Nav Overlay
+========================================================================== */
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Menu style */
+.overlay nav {
+    position: relative;
+    top: 50%;
+    /*height: 60%;*/
+    text-align: center;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.overlay ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.overlay ul li:last-child {
+    margin-right: 0px
+}
+.overlay ul li i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.overlay ul li a {
+    display: block;
+    padding: 20px 0;
+    min-width: 190px;
+    border: 1px solid #fff;
+    /*border-radius: 3px;*/
+    /*background-color: #345271;*/
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+    border-color: #268bd2;
+    color: #268bd2;
+    text-decoration: none;
+}
+
+/* Effects */
+.overlay-nav {
+    background: #2E3335;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-nav.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-nav nav ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-nav.open nav ul:first-child li:first-child {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.overlay-nav.open nav ul:first-child li:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.overlay-nav.open nav ul:nth-child(2) li:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.overlay-nav.open nav ul:nth-child(2) li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay-nav.open nav ul li {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero {
+    position: relative;
+    padding: 60px 0 60px 0;
+    min-height: 500px;
+    background: rgb(33, 125, 148) url('../img/banner.jpg') no-repeat center center;
+    background: #3686be;
+    background-size: cover;
+    color: #fff;
+}
+.hero h1 {
+    font-family: 'Proxima300', arial;
+    text-align: center;
+    margin: 70px 0 15px 0;
+    font-size: 54px;
+    letter-spacing: -1.5px;
+}
+.hero h3 {
+    font-family: 'Proxima400', arial;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.hero-content a {
+    color: white;
+    border-bottom: 1px dotted #ffffff;
+    text-decoration: none;
+}
+
+.hero h1 span {
+    display: inline-block;
+    color: #a1a9b0;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+}
+header i {
+    margin-left: 5px
+}
+
+.hero input[type='submit'] {
+    background: #215f8b;
+    margin-right: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Proxima300', arial;
+    font-size: 14px;
+    width: 208px;
+}
+.hero input {
+    border: none;
+    width: 240px;
+    height: 53px;
+    padding: 0 15px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-right: 5px;
+    font-size: 18px;
+    color: #565656;
+}
+.hero input:hover {
+    background: #1c5176;
+}
+/* ==========================================================================
+Actions
+========================================================================== */
+.action > .icon { 
+    text-align: center; 
+    position: relative; 
+}
+.action > .icon > .image { 
+    position: relative; 
+    z-index: 2; 
+    margin: auto; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid white; 
+    line-height: 88px; 
+    border-radius: 50%; 
+    background: #93CC76; 
+    vertical-align: middle; 
+}
+/*swatch colors
+=====================
+yellow - #b58900
+orange - #cb4b16
+red - #dc322f
+magenta - #d33682
+violet - #6c71c4
+blue - #3686be
+cyan - #2aa198
+green - #93CC76
+dark gray - #2E3335
+===================== */
+.action {
+    margin-bottom: 30px;
+}
+.action > .icon > .image.rocket {
+    background: #ffd762;
+    text-shadow: 0 2px 0 #d7a000;
+}
+.action > .icon:hover > .image.rocket { 
+    background: #ffca2f;
+}
+.action > .icon > .image.cubes {
+    background: #ff9f7c;
+    text-shadow: 0 1px 0 #ff7949;
+}
+.action > .icon:hover > .image.cubes { 
+    background: #ff7a49;
+}
+.action > .icon > .image.cogs {
+    background: #a2d389;
+    text-shadow: 0 1px 0 #009451;
+}
+.action > .icon:hover > .image.cogs { 
+    background: #85c564;
+}
+.action > .icon > .image > i { 
+    margin-top: 40px;
+    font-size: 66px !important; 
+    color: #fff !important; 
+}
+.action > .icon:hover > .image > i { 
+    color: white !important; 
+}
+.action h3 {
+    color: #595959;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.action p {
+    padding: 0 20px;
+    color: #717171;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'Proxima400', arial;
+}
+/* ==========================================================================
+Custom Slider
+========================================================================== */
+.flickity-page-dots .dot {
+    width: 13px;
+    height: 13px;
+    opacity: .1;
+    background: transparent;
+    border: 2px solid #222;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.flickity-page-dots .dot.is-selected {
+    border: 2px solid #3686be;
+    background: #3686be;
+    opacity: .2;
+}
+#team {
+    background: #eef1f2;
+    padding: 130px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.team-slider {
+    position: relative;
+}
+.team-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.team-slider ul li {
+    width: 100%;
+}
+.team-slider li h1 {
+    margin-bottom: 15px;
+    color: #454545;
+    font-weight: 400;
+    font-size: 32px;
+}
+.team-slider li p {
+    color: #717171;
+    font-size: 16px;
+    line-height: 30px;
+    width: 60%;
+    margin: 20px auto;
+}
+#team img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    -ms-border-radius: 75px;
+    -o-border-radius: 75px;
+    border-radius: 75px;
+    border: 4px solid #d8dde0;
+    margin-bottom: 10px;
+}
+#team h4 {
+    color: #3686be;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#team span {
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+}
+.slides li h1 {
+    margin: 0;
+    padding: 0;
+}
+.team-slider .flickity-page-dots {
+    text-align: center;
+    margin-top: 30px;
+    position: static;
+}
+
+.team-slider .flickity-page-dots .dot {
+    margin: 0 12px 0 0;
+}
+
+.flickity-prev-next-button {
+    outline: none;
+}
+
+.flickity-prev-next-button {
+    background: none;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: rgba(255, 255, 255, 0.5);
+}
+/* ==========================================================================
+Work
+========================================================================== */
+#projects {
+    background: #f8f8f8;
+}
+#projects h1 {
+    font-size: 36px;
+    font-family: 'Proxima400', arial;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #454545;
+}
+#projects img {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+#projects h4 {
+    font-size: 20px;
+    font-family: 'Proxima300', arial;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+#projects p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
