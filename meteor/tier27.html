@@ -1,0 +1,129 @@
+<head>
+  <title>tier27</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tier 27">
+  <meta name="author" content="Ryan Douvlos">
+  
+  <!--external css, fonts-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header>
+  <section class="hero">
+    <div class="texture-overlay"></div>
+    <div class="container">
+      <div class="row nav-wrapper">
+        <div class="col-md-6 col-sm-6 col-xs-6 text-left logo">
+          <a href="#"><img src="img/tri-tier.png" alt="Tier 27 Logo" width="35"> tier <span>27</span></a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+          <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+        </div>
+      </div>
+      <div class="row hero-content">
+        <div class="col-md-12 text-center">
+          <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+          <h3>adipiscing elit, sed do eiusmod tempor incididunt ut labore</h3>
+          <input class="" name="commit" type="submit" value="Learn More">
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<!--main content start-->
+<section id="actions" class="homepage-section">
+    <div class="container">
+        <div class="row text-center">
+			{{#each services}}
+				{{> service}}
+			{{/each}}
+        </div> <!--/.row-->
+    </div> <!--/.container-->
+</section>
+
+<section id="team">
+	<div class="container">
+	    <div class="row">
+	        <div class="col-md-12">
+	            <div class="team-slider">
+                    <ul class="slides" id="teamSlider">
+						{{#each team}}
+							{{> member}}
+						{{/each}}
+                    </ul>
+                </div>
+	        </div>
+	    </div> <!--/.row-->
+	</div> <!--/.container-->
+</section>
+
+<section id="projects" class="homepage-section">
+	<div class="container">
+	    <div class="row">
+	        <div class="col-sm-8 col-md-6">
+	            <img class="img-responsive" src="img/lms.png" alt="LMS">
+	        </div>
+	        <div class="col-sm-12 col-md-6">
+	        	<h1>LMS</h1>
+	        	<h4>Lorem ipsum dolor sit amet</h4>
+	        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	        	<a class="theme-color-btn">Read More</a>
+	        </div>
+	    </div> <!--/.row-->
+	</div> <!--/.container-->
+</section>
+
+<!--main content end-->
+
+
+<div class="overlay overlay-nav">
+	<div class="texture-overlay"></div>
+	<nav>
+		<ul>
+			<li><a href="#team">Team</a></li>
+			<li><a href="#projects">Projects</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Resources</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+  
+<template name="member">
+  <div class="col-xs-12 col-sm-6 team-member">
+  	<img src="{{image}}" alt="Josh">
+  	<h4>{{name}}</h4>
+  	<span>{{title}}</span>
+  	<p>{{tag}}</p>
+  </div>
+</template>
+<template name="service">
+  <div class="col-sm-4 service">
+      <div class="action">                           
+          <div class="icon">
+              <div class="image {{icon.name}}"><i class="fa fa-{{icon.name}} fa-{{icon.action}}"></i></div>
+              <h3 class="name">{{name}}</h3>
+              <p>{{tag}}</p>
+          </div>
+      </div> <!--/.action-->
+  </div>
+</template>
