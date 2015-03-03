@@ -14,10 +14,11 @@
 <section id="actions" class="homepage-section">
     <div class="container">
         <div class="row text-center">
+            <h2>Lorem ipsum <b>dolor</b> sit amet, consectetur.</h2>
             <div class="col-sm-4">
                 <div class="action">                           
                     <div class="icon">
-                        <div class="image rocket"><i class="fa fa-rocket fa-pulse"></i></div>
+                        <div class="image rocket"><i class="fa fa-rocket"></i></div>
                         <h3>Application Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
@@ -26,7 +27,7 @@
             <div class="col-sm-4">
                 <div class="action">                           
                     <div class="icon">
-                        <div class="image cogs"><i class="fa fa-cogs fa-spin"></i></div>
+                        <div class="image cogs"><i class="fa fa-cogs"></i></div>
                         <h3>API Construction</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
@@ -35,7 +36,7 @@
             <div class="col-sm-4">
                 <div class="action">                           
                     <div class="icon">
-                        <div class="image cubes"><i class="fa fa-cubes fa-pulse"></i></div>
+                        <div class="image cubes"><i class="fa fa-cubes"></i></div>
                         <h3>Startup Consulting</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
@@ -43,6 +44,80 @@
             </div>
         </div> <!--/.row-->
     </div> <!--/.container-->
+</section>
+
+<section id="process">
+    <div class="container">
+        <h2>The Tier 27 Process</h2>
+        <ul class="process">
+            <li>
+              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
+              <div class="process-panel">
+                <div class="process-heading">
+                  
+                </div>
+                <div class="process-body">
+                    <h3>Meet</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
+                </div>
+                
+              </div>
+            </li>
+            
+            <li  class="process-inverted">
+              <div class="process-badge primary"><a><i class="fa fa-circle-o invert" rel="tooltip" title="We are badasses" id=""></i></a></div>
+              <div class="process-panel">
+                <div class="process-heading">
+                  
+                </div>
+                <div class="process-body">
+                    <h3>Plan</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
+                 
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
+              <div class="process-panel">
+                <div class="process-body">
+                    <h3>Design &amp; Develop</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
+                  
+                </div>
+
+              </div>
+            </li>
+            
+            <li  class="process-inverted">
+              <div class="process-badge primary"><a><i class="fa fa-circle-o invert" rel="tooltip" title="We are badasses" id=""></i></a></div>
+              <div class="process-panel">
+                <div class="process-body">
+                    <h3>Test</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
+                  
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
+              <div class="process-panel">
+                <div class="process-heading">
+                  
+                </div>
+                <div class="process-body">
+                    <h3>Launch</h3>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
+                  
+                </div>
+                
+              </div>
+            </li>
+            
+            <li class="clearfix" style="float: none;"></li>
+        </ul>
+    </div>
 </section>
 
 <section id="team">
@@ -100,23 +175,6 @@
                         </li>
                     </ul>
                 </div>
-	        </div>
-	    </div> <!--/.row-->
-	</div> <!--/.container-->
-</section>
-
-<section id="projects" class="homepage-section">
-	<div class="container">
-	    <div class="row">
-	        <div class="col-sm-8 col-md-6">
-	            <img class="img-responsive" src="img/lms.png" alt="LMS">
-	        </div>
-	        <div class="col-sm-12 col-md-6">
-	        	<h1>LMS</h1>
-	        	<h4>Lorem ipsum dolor sit amet</h4>
-	        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-	        	<a class="theme-color-btn">Read More</a>
 	        </div>
 	    </div> <!--/.row-->
 	</div> <!--/.container-->
@@ -188,6 +246,25 @@ $(document).ready(function() {
         autoPlay: true
     });
 
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    var my_posts = $("[rel=tooltip]");
+
+    var size = $(window).width();
+    for(i=0;i<my_posts.length;i++){
+        the_post = $(my_posts[i]);
+
+        if(the_post.hasClass('invert') && size >=767 ){
+            the_post.tooltip({ placement: 'left'});
+            the_post.css("cursor","pointer");
+        }else{
+            the_post.tooltip({ placement: 'rigth'});
+            the_post.css("cursor","pointer");
+        }
+    }
 });
 </script>
 

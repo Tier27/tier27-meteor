@@ -49,7 +49,23 @@ Global Styling
     background-image: url(../img/grid.png);
 }
 .homepage-section {
-    padding: 90px 0 90px 0;
+    padding: 90px 0 70px 0;
+}
+.homepage-section h2 {
+    font-family: 'Proxima300', arial;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #454545;
+}   
+.homepage-section h2 b {
+    font-family: 'Proxima400', arial;
+}
+.home-gray {
+    background: #eef1f2;
+    padding: 100px 0 80px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
 }
 
 /* ==========================================================================
@@ -468,25 +484,25 @@ dark gray - #2E3335
     margin-bottom: 30px;
 }
 .action > .icon > .image.rocket {
-    background: #ffd762;
-    text-shadow: 0 2px 0 #d7a000;
+    background: #bdd7e9;
+    text-shadow: 0 2px 0 #84b4d6;
 }
 .action > .icon:hover > .image.rocket { 
-    background: #ffca2f;
+    background: #84b4d6;
 }
 .action > .icon > .image.cubes {
-    background: #ff9f7c;
-    text-shadow: 0 1px 0 #ff7949;
+    background: #ffb196;
+    text-shadow: 0 1px 0 #ffb296;
 }
 .action > .icon:hover > .image.cubes { 
     background: #ff7a49;
 }
 .action > .icon > .image.cogs {
-    background: #a2d389;
+    background: #b1da9c;
     text-shadow: 0 1px 0 #009451;
 }
 .action > .icon:hover > .image.cogs { 
-    background: #85c564;
+    background: #a2d389;
 }
 .action > .icon > .image > i { 
     margin-top: 40px;
@@ -527,9 +543,9 @@ Custom Slider
     opacity: .2;
 }
 #team {
-    background: #eef1f2;
-    padding: 130px 0;
-    color: #fff;
+    background: #fff;
+    padding: 100px 0 80px 0;
+    color: #454545;
     text-align: center;
     position: relative;
 }
@@ -605,6 +621,329 @@ Custom Slider
 .flickity-prev-next-button .arrow {
     fill: rgba(255, 255, 255, 0.5);
 }
+/* ==========================================================================
+Process
+========================================================================== */
+#process {
+    background: #eef1f2;
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Proxima400', arial;
+}
+#process h2 {
+    font-weight: 100;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #454545;
+}
+.process {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.process:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #e8e8e8;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.process > li {
+  margin-bottom: 20px;
+  position: relative;
+  width: 50%;
+  float: left;
+  clear: left;
+}
+.process > li:before,
+.process > li:after {
+  content: " ";
+  display: table;
+}
+.process > li:after {
+  clear: both;
+}
+.process > li:before,
+.process > li:after {
+  content: " ";
+  display: table;
+}
+.process > li:after {
+  clear: both;
+}
+.process > li > .process-panel {
+  width: 95%;
+  float: left;
+  border: 1px solid #ddd;
+  /*border-radius: 2px;*/
+  /*padding: 20px;*/
+  position: relative;
+  /*-webkit-box-shadow: 0 1px 1px rgba(189, 215, 233, 0.175);
+  box-shadow: 0 1px 1px rgba(189, 215, 233, 0.175);*/
+}
+
+.process > li > .process-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ddd;
+  border-right: 0 solid #ddd;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.process > li > .process-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #f8f8f8;
+  border-right: 0 solid #f8f8f8;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.process > li > .process-badge {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  /*background-color: #999999;*/
+  z-index: 100;
+  /*
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  */
+}
+.process > li.process-inverted > .process-panel {
+  float: right;
+}
+.process > li.process-inverted > .process-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.process > li.process-inverted > .process-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.process-badge > a {
+  color: #C5C7C5 !important;
+}
+.process-badge a:hover {
+  color: #000 !important;
+}
+.process-title {
+  margin-top: 0;
+  color: inherit;
+}
+.process-panel {
+    border-radius: 1px;
+}
+.process-body {
+    background: #f8f8f8;
+}
+.process-body h3 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Proxima600', arial;
+    margin-bottom: 0;
+}
+.process-body .icon {
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+    border-radius: 29px;
+    width: 47px;
+    height: 47px;
+    background: red;
+    float: left;
+    margin-top: 7px;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+.process-body > p,
+.process-body > ul {
+    padding:20px;
+    margin-bottom: 0;
+    color: #454545;
+    font-size: 15px;
+    text-align: left;
+    line-height: 160%;
+}
+.process-body > p + p {
+  margin-top: 5px;
+}
+.process-footer{
+    padding:10px;
+    padding-bottom: 30px;
+    background-color:#f4f4f4;
+}
+.process-footer > a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.tooltip{
+
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+    filter:alpha(opacity=0);
+    
+}
+.tooltip.in{
+    /*opacity:0;
+    filter:alpha(opacity=80);*/
+    
+}
+.tooltip.top{
+    margin-top:-2px;
+}
+.tooltip.right{
+    margin-left:2px;
+}
+.tooltip.bottom{
+    margin-top:2px;
+}
+.tooltip.left{
+    margin-left:-2px;
+}
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.left .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.bottom .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.right .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip-inner{
+    width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:#313131;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+}
+.tooltip-arrow{
+    position:absolute;
+    width:0;
+    height:0;
+}
+.process > li.process-inverted{
+  float: right; 
+  clear: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.process > li:nth-child(2){
+  margin-top: 60px;
+}
+.process > li.process-inverted > .process-badge{
+  left: -12px;
+}
+
+@media (max-width: 767px) {
+    ul.process:before {
+        left: 40px;
+    }
+
+    ul.process > li {
+      margin-bottom: 20px;
+      position: relative;
+      width:100%;
+      float: left;
+      clear: left;
+    }
+    ul.process > li > .process-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.process > li > .process-badge {
+        left: 28px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.process > li > .process-panel {
+        float: right;
+    }
+
+        ul.process > li > .process-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.process > li > .process-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+    
+.process > li.process-inverted{
+  float: left; 
+  clear: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.process > li.process-inverted > .process-badge{
+  left: 28px;
+}
+
 /* ==========================================================================
 Work
 ========================================================================== */
