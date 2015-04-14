@@ -630,7 +630,7 @@ Process
     margin-top: 0;
     margin-bottom: 50px;
     color: #454545;
-    font-family: 'Proxima300', arial;
+    font-family: 'Proxima600', arial;
 }
 .process {
   list-style: none;
@@ -950,6 +950,7 @@ Work
 }
 #work h2 {
       margin-bottom: 45px;
+      font-size: 36px;
       color: #fff;
       text-align: center;
       font-family: 'Proxima300', arial;
@@ -1008,4 +1009,25 @@ Work
 }
 #work a:hover span{
     opacity:1;
+}
+
+/* ==========================================================================
+Resources
+========================================================================== */
+#resources {
+    background: #eef1f2;
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Proxima400', arial;
+}
+#resources h2 {
+    font-family: 'Proxima600', arial;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 45px;
+    color: #454545;
+}
+#resources img {
+    width: 80%;
+    margin-bottom: 20px;
 }
