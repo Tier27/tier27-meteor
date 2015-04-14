@@ -56,7 +56,7 @@ Tier27.controller('ServicesController', ['$scope', function($scope) {
 				action: "spin",
 			},
 			name: "Programming",
-			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+			tag: "Our team is proficient in every language needed to bring your applcation to life. We'll tell the hardware what you want.",
 		},
 		{
 			icon: {
@@ -64,7 +64,7 @@ Tier27.controller('ServicesController', ['$scope', function($scope) {
 				action: "spin",
 			},
 			name: "Consulting",
-			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+			tag: "We've worked with many organizations to carry their ideas through to production. We can help you do the same.",
 		},
 		{
 			icon: {
@@ -72,7 +72,7 @@ Tier27.controller('ServicesController', ['$scope', function($scope) {
 				action: "spin",
 			},
 			name: "Design",
-			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+			tag: "We give each of our applications a unique character by integrating beautiful concepts into modern design architecture practice.",
 		},
 	]
 }]);
@@ -91,6 +91,13 @@ Tier27.controller('TeamController', ['$scope', function($scope) {
 
 Tier27.controller('ProcessController', ['$scope', function($scope) {
   $scope.tagline = 'Our Process'
+
+  $scope.steps = [ 
+    {name: 'Connect', description: ''},
+    {name: 'Innovate', description: ''},
+    {name: 'Plan', description: ''},
+    {name: 'Program', description: ''},
+  ]
 
   $(document).ready(function(){
       var my_posts = $("[rel=tooltip]");

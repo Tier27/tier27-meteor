@@ -2,66 +2,15 @@
     <div class="container">
         <h2>{{ tagline }}</h2>
         <ul class="process">
-            <li>
-              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
+            <li ng-repeat="step in steps" ng-class-even="'process-inverted'">
+              <div class="process-badge primary"><a><i class="fa fa-circle-o" ng-class-even="'invert'" rel="tooltip" title="We are badasses" id=""></i></a></div>
               <div class="process-panel">
                 <div class="process-heading">
                   
                 </div>
                 <div class="process-body">
-                    <h3>Meet</h3>
+                    <h3>{{step.name}}</h3>
                     <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
-                </div>
-                
-              </div>
-            </li>
-            
-            <li  class="process-inverted">
-              <div class="process-badge primary"><a><i class="fa fa-circle-o invert" rel="tooltip" title="We are badasses" id=""></i></a></div>
-              <div class="process-panel">
-                <div class="process-heading">
-                  
-                </div>
-                <div class="process-body">
-                    <h3>Plan</h3>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
-                 
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
-              <div class="process-panel">
-                <div class="process-body">
-                    <h3>Design &amp; Develop</h3>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
-                  
-                </div>
-
-              </div>
-            </li>
-            
-            <li  class="process-inverted">
-              <div class="process-badge primary"><a><i class="fa fa-circle-o invert" rel="tooltip" title="We are badasses" id=""></i></a></div>
-              <div class="process-panel">
-                <div class="process-body">
-                    <h3>Test</h3>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
-                  
-                </div>
-                
-              </div>
-            </li>
-            <li>
-              <div class="process-badge primary"><a><i class="fa fa-circle-o" rel="tooltip" title="We are badasses" id=""></i></a></div>
-              <div class="process-panel">
-                <div class="process-heading">
-                  
-                </div>
-                <div class="process-body">
-                    <h3>Launch</h3>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</p>
-                  
                 </div>
                 
               </div>
