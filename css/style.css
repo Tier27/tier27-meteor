@@ -296,7 +296,7 @@ Nav Overlay
 .overlay ul li {
     display: block;
     float: left;
-    margin-right: 20px;
+    margin-right: 20px !important;
 }
 .overlay ul li:last-child {
     margin-right: 0px
