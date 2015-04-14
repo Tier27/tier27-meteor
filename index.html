@@ -28,6 +28,7 @@
 <span ng-include="'partials/services.html'"></span>
 <span ng-include="'partials/process.html'"></span>
 <span ng-include="'partials/team.html'" ng-controller="TeamController"></span>
+<span ng-include="'partials/work.html'" ng-controller="WorkController"></span>
 <div class="overlay overlay-nav">
 	<div class="texture-overlay"></div>
 	<nav>
@@ -142,6 +143,9 @@ Tier27.controller('TeamController', ['$scope', function($scope) {
   });
 
   $scope.double = function(value) { return value * 2; };
+}]);
+
+Tier27.controller('WorkController', ['$scope', function($scope) {
 }]);
 </script>
 
