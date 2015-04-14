@@ -1,0 +1,150 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tier 27">
+<meta name="author" content="Ryan Douvlos">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--external css, fonts-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/queries.css" rel="stylesheet">
+<link href="css/flickity.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="bower_components/angular/angular.min.js"></script>
+<body ng-app="Tier27">
+<div ui-view="" ng-controller="AppController">
+<span ng-include="'partials/top.html'" ng-controller="AppController"></span>
+<span ng-include="'partials/services.html'"></span>
+<span ng-include="'partials/process.html'"></span>
+<span ng-include="'partials/team.html'" ng-controller="TeamController"></span>
+<div class="overlay overlay-nav">
+	<div class="texture-overlay"></div>
+	<nav>
+		<ul>
+			<li><a href="#team">Team</a></li>
+			<li><a href="#projects">Projects</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Resources</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    $(".wp1").waypoint(function() {
+        $(".wp1").addClass("animated fadeInLeft")
+    }, {
+        offset: "75%"
+    });
+    $(".wp2").waypoint(function() {
+        $(".wp2").addClass("animated fadeInDown")
+    }, {
+        offset: "75%"
+    });
+    $(".wp3").waypoint(function() {
+        $(".wp3").addClass("animated fadeInRight")
+    }, {
+        offset: "75%"
+    });
+    $(".wp4").waypoint(function() {
+        $(".wp4").addClass("animated fadeInDown")
+    }, {
+        offset: "75%"
+    });
+    $(".wp5").waypoint(function() {
+        $(".wp5").addClass("animated fadeInUp")
+    }, {
+        offset: "75%"
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    var my_posts = $("[rel=tooltip]");
+
+    var size = $(window).width();
+    for(i=0;i<my_posts.length;i++){
+        the_post = $(my_posts[i]);
+
+        if(the_post.hasClass('invert') && size >=767 ){
+            the_post.tooltip({ placement: 'left'});
+            the_post.css("cursor","pointer");
+        }else{
+            the_post.tooltip({ placement: 'rigth'});
+            the_post.css("cursor","pointer");
+        }
+    }
+});
+</script>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script>
+var Tier27 = angular.module('Tier27',[]);
+
+Tier27.controller('AppController', ['$scope', function($scope) {
+  console.log('app');
+  $(".nav-toggle").click(function() {
+      $(this).toggleClass("active");
+      $(".overlay-nav").toggleClass("open")
+  });
+  $(".overlay ul li a").click(function() {
+      $(".nav-toggle").toggleClass("active");
+      $(".overlay-nav").toggleClass("open")
+  });
+  $(".overlay").click(function() {
+      $(".nav-toggle").toggleClass("active");
+      $(".overlay-nav").toggleClass("open")
+  });
+  $("a[href*=#]:not([href=#])").click(function() {
+      if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
+          var e = $(this.hash);
+          e = e.length ? e : $("[name=" + this.hash.slice(1) + "]");
+          if (e.length) {
+              $("html,body").animate({
+                  scrollTop: e.offset().top
+              }, 1e3);
+              return false
+          }
+      }
+  })
+}]);
+
+Tier27.controller('TeamController', ['$scope', function($scope) {
+  console.log('here');
+  $("#teamSlider").flickity({
+      cellAlign: "left",
+      contain: true,
+      prevNextButtons: true,
+      autoPlay: true
+  });
+
+  $scope.double = function(value) { return value * 2; };
+}]);
+</script>
+
+</body>
+</html>
+
