@@ -124,6 +124,7 @@
 	<div class="container">
 	    <div class="row">
 	        <div class="col-md-12">
+                <h2>Meet Tier 27</h2>
 	            <div class="team-slider">
                     <ul class="slides" id="teamSlider">
                         <li>
@@ -178,6 +179,30 @@
 	        </div>
 	    </div> <!--/.row-->
 	</div> <!--/.container-->
+</section>
+
+<section id="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Some Awesome Work</h2>
+            </div>
+        </div> <!--/.row-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <a target="_blank" href="https://youstart.me"><span><i class="fa fa-arrow-right"> Open YouStart.Me</i></span><img class="img-responsive" src="img/courtier.png" alt="Courtier"></a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a target="_blank" href="https://courtierwines.com"><span><i class="fa fa-arrow-right"> Open Courtier</i></span><img class="img-responsive" src="img/courtier.png" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a target="_blank" href="https://esm.development.tier27.com"><span><i class="fa fa-arrow-right"> Open ESM</i></span><img class="img-responsive" src="img/courtier.png" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a target="_blank" href="https://arwtch.com"><span><i class="fa fa-arrow-right"> Open Arrow Tech</i></span><img class="img-responsive" src="img/courtier.png" alt=""></a>
+            </div>
+        </div> <!--/.row-->
+    </div> <!--/.container-->
 </section>
 
 <!--main content end-->

@@ -409,10 +409,7 @@ Hero
     width: 100%;
     height: 100%;
 }
-.hero {
-    width: 100%;
-    height: 100%;
-}
+
 header i {
     margin-left: 5px
 }
@@ -468,18 +465,6 @@ Actions
     background: #93CC76; 
     vertical-align: middle; 
 }
-/*swatch colors
-=====================
-yellow - #b58900
-orange - #cb4b16
-red - #dc322f
-magenta - #d33682
-violet - #6c71c4
-blue - #3686be
-cyan - #2aa198
-green - #93CC76
-dark gray - #2E3335
-===================== */
 .action {
     margin-bottom: 30px;
 }
@@ -548,6 +533,13 @@ Custom Slider
     color: #454545;
     text-align: center;
     position: relative;
+}
+#team h2 {
+    font-family: 'Proxima300', arial;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #454545;
 }
 .team-slider {
     position: relative;
@@ -621,6 +613,7 @@ Custom Slider
 .flickity-prev-next-button .arrow {
     fill: rgba(255, 255, 255, 0.5);
 }
+
 /* ==========================================================================
 Process
 ========================================================================== */
@@ -636,6 +629,7 @@ Process
     margin-top: 0;
     margin-bottom: 50px;
     color: #454545;
+    font-family: 'Proxima300', arial;
 }
 .process {
   list-style: none;
@@ -932,44 +926,84 @@ Process
             left: -14px;
             right: auto;
         }
-    
-.process > li.process-inverted{
-  float: left; 
-  clear: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 
-.process > li.process-inverted > .process-badge{
-  left: 28px;
+    
+        .process > li.process-inverted{
+          float: left; 
+          clear: left;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        .process > li.process-inverted > .process-badge{
+          left: 28px;
+        }
 }
 
 /* ==========================================================================
 Work
 ========================================================================== */
-#projects {
-    background: #f8f8f8;
+#work {
+      background-color: #3686be;
+      padding: 60px 0;
 }
-#projects h1 {
-    font-size: 36px;
-    font-family: 'Proxima400', arial;
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #454545;
+#work h2 {
+      margin-bottom: 45px;
+      color: #fff;
+      text-align: center;
+      font-family: 'Proxima300', arial;
 }
-#projects img {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
+#work a:before {
+    content: "";
+    box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    position: absolute;
+    z-index: 9999999;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
-#projects h4 {
-    font-size: 20px;
-    font-family: 'Proxima300', arial;
-    margin-bottom: 30px;
-    margin-top: 0;
+#work a img {
+    box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.05);
+    margin:0px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    transition:all 0.1s;
+    -moz-transition:all 0.1s;
+    -webkit-transition:all 0.1s;
+    opacity:1;
 }
-#projects p {
-    font-size: 13px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 30px;
+#work a img:hover{
+    opacity:1;  
+}
+#work a span{
+    position:absolute;
+    z-index:99999;
+    background:#fff;
+    background:rgba(255,255,255,1);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    height:40px;
+    line-height:40px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    font-weight:600;
+    color:#dc322f;
+    text-align:center;
+    top:50%;
+    margin-top:-25px;
+    width:70%;
+    left:15%;
+    opacity:0;
+    transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+}
+#work a:hover span{
+    opacity:1;
 }
