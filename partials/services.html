@@ -1,33 +1,15 @@
 <section id="actions" class="homepage-section">
     <div class="container">
         <div class="row text-center">
-            <h2>Lorem ipsum <b>dolor</b> sit amet, consectetur.</h2>
-            <div class="col-sm-4">
+            <h2>{{ tagline }}</h2>
+            <div class="col-sm-4" ng-repeat="service in services">
                 <div class="action">                           
                     <div class="icon">
-                        <div class="image rocket"><i class="fa fa-rocket"></i></div>
-                        <h3>Application Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="image {{service.icon.name}}"><i class="fa fa-{{service.icon.name}}"></i></div>
+                        <h3>{{service.name}}</h3>
+                        <p>{{service.tag}}</p>
                     </div>
                 </div> <!--/.action-->
-            </div>
-            <div class="col-sm-4">
-                <div class="action">                           
-                    <div class="icon">
-                        <div class="image cogs"><i class="fa fa-cogs"></i></div>
-                        <h3>API Construction</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div> <!--/.action-->
-            </div>
-            <div class="col-sm-4">
-                <div class="action">                           
-                    <div class="icon">
-                        <div class="image cubes"><i class="fa fa-cubes"></i></div>
-                        <h3>Startup Consulting</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div> <!--/.action-->     
             </div>
         </div> <!--/.row-->
     </div> <!--/.container-->

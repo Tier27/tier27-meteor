@@ -47,6 +47,36 @@ Tier27.controller('AppController', ['$scope', function($scope) {
   console.log($scope.menu)
 }]);
 
+Tier27.controller('ServicesController', ['$scope', function($scope) {
+    $scope.tagline = 'Let us handle everything'
+	$scope.services = [
+		{
+			icon: {
+				name: "rocket",
+				action: "spin",
+			},
+			name: "Programming",
+			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+		},
+		{
+			icon: {
+				name: "cogs",
+				action: "spin",
+			},
+			name: "Consulting",
+			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+		},
+		{
+			icon: {
+				name: "cubes",
+				action: "spin",
+			},
+			name: "Design",
+			tag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+		},
+	]
+}]);
+
 Tier27.controller('TeamController', ['$scope', function($scope) {
   console.log('here');
   $("#teamSlider").flickity({
@@ -60,6 +90,8 @@ Tier27.controller('TeamController', ['$scope', function($scope) {
 }]);
 
 Tier27.controller('ProcessController', ['$scope', function($scope) {
+  $scope.tagline = 'Our Process'
+
   $(document).ready(function(){
       var my_posts = $("[rel=tooltip]");
   
