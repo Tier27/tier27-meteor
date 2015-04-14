@@ -2,7 +2,7 @@ var Tier27 = angular.module('Tier27',[]);
 
 Tier27.controller('AppController', ['$scope', function($scope) {
   $scope.slogan = 'Web Applications for the Masses'
-  $scope.tagline = 'Your vision is just months away'
+  $scope.tagline = 'Your vision is just a few months away'
   $scope.sections = [
     {name: 'services'},
     {name: 'process'},
